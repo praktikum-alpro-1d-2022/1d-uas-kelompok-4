@@ -158,8 +158,6 @@ int main(){
 
         hasil_tiket_bioskop(pelanggan, namaFilmnya, jamFilmnya, tempat_duduk, nama_jenis_tiket_bioskopnya, harga_tiket);
     }
-    nomor_tiketnya = nomor_jenis_tiket_bioskopnya - 1;
-    nama_jenis_tiket_bioskopnya = info_tiket.tiketnya[nomor_tiketnya];
 /*====================================================================================================================================*/
 
     cout<<"Apakah ingin memesan makanan atau minuman?: (Y/N) "; cin>>status1;
@@ -168,8 +166,12 @@ int main(){
         menu_hidangan();
     
     cout<<"Jumlah hidangan yang ingin dipesan: "; cin>>jumlah_hidangannya;
+
+/*deklarasi tipedata variable*/
     string ukuran_hidangannya[jumlah_hidangannya], jenis_hidangan[jumlah_hidangannya], request_hidangan[jumlah_hidangannya];
     int hidangannya[jumlah_hidangannya], harga_hidangannya[jumlah_hidangannya];
+/*deklarasi tipedata variable*/
+
     for(int i=0;i<jumlah_hidangannya;i++){
         cout<<"Masukkan nomor jenis hidangan yang anda inginkan: "; cin>>hidangannya[i];
         if(hidangannya[i]!= 4){
